@@ -68,14 +68,14 @@ const Signup = () => {
             <div className="flex space-x-4">
               <input
                 type="text"
-                className="input input-bordered w-full pl-3 placeholder-white/30"
+                className="input input-bordered w-full pl-3 "
                 placeholder="First Name"
                 value={formData.firstName}
                 onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
               />
               <input
                 type="text"
-                className="input input-bordered w-full pl-3 placeholder-white/30"
+                className="input input-bordered w-full pl-3 "
                 placeholder="Last Name"
                 value={formData.lastName}
                 onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
@@ -93,7 +93,7 @@ const Signup = () => {
                 </div>
                 <input
                   type="email"
-                  className={`input input-bordered w-full pl-3 placeholder-white/30`}
+                  className={`input input-bordered w-full pl-3 `}
                   placeholder="Email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -110,7 +110,7 @@ const Signup = () => {
                 </div>
                 <input
                   type={showPassword ? "text" : "password"}
-                  className={`input input-bordered w-full pl-3 placeholder-white/30`}
+                  className={`input input-bordered w-full pl-3 `}
                   placeholder="Password"
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
